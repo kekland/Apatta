@@ -41,7 +41,7 @@
                     android:layout_height="36dp"
                     android:padding="6dp"
                     android:layout_gravity="left"
-                    android:background="?attr/selectableItemBackground"
+                    android:background="?attr/selectableItemBackgroundBorderless"
                     android:clickable="true">
                     <View
                         android:layout_width="24dp"
@@ -61,7 +61,7 @@
                     android:layout_height="36dp"
                     android:padding="6dp"
                     android:layout_gravity="right"
-                    android:background="?attr/selectableItemBackground"
+                    android:background="?attr/selectableItemBackgroundBorderless"
                     android:clickable="true">
                     <View
                         android:layout_width="24dp"

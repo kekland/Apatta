@@ -28,19 +28,9 @@
         android:id="@+id/welcomeFloatingActionButton"
         android:layout_width="@dimen/ms_step_tab_height"
         android:layout_height="@dimen/ms_step_tab_height"
-        android:layout_gravity="center_horizontal|bottom"
-        android:layout_marginLeft="8dp"
-        android:layout_marginBottom="192dp"
+        android:layout_gravity="center"
         android:clickable="true"
         app:fabSize="normal"
         app:srcCompat="@drawable/ic_add_black_24dp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Нажмите + для начала работы"
-        android:textSize="24sp"
-        android:layout_gravity="center"
-        />
 </FrameLayout>

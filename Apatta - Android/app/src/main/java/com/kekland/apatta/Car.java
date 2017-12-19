@@ -10,12 +10,23 @@ public class Car {
     Float DistanceTopRight;
     Float DistanceBottomLeft;
 
+    Boolean edited;
+
+    public Boolean getEdited() {
+        return edited;
+    }
+
+    public void setEdited(Boolean edited) {
+        this.edited = edited;
+    }
+
     public Car(String name, Float distanceTopLeft, Float distanceTopRight, Float distanceBottomLeft, Float distanceBottomRight) {
         Name = name;
         DistanceTopLeft = distanceTopLeft;
         DistanceTopRight = distanceTopRight;
         DistanceBottomLeft = distanceBottomLeft;
         DistanceBottomRight = distanceBottomRight;
+        setEdited(false);
     }
 
     public String getName() {

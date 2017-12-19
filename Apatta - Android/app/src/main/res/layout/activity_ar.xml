@@ -1,9 +1,193 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.kekland.apatta.ARActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorPrimary"
+            android:contentInsetEnd="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="16dp">
+
+                    <View
+                        android:id="@+id/schemeConstructorBack"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/ic_arrow_back_white_24dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scheme Constructor"
+                    android:layout_gravity="center_vertical"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse" />
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:id="@+id/arBottomCard"
+        app:cardElevation="0dp"
+        app:contentPadding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/stepperText"
+                android:text="Top Left wheel"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:id="@+id/stepperProgress"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_vertical"
+                    android:max="6"
+                    android:progress="6" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <FrameLayout
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:id="@+id/stepperNode1"
+                        android:background="@drawable/circle" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="0.167" />
+
+                    <FrameLayout
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:id="@+id/stepperNode2"
+                        android:background="@drawable/circle" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="0.167" />
+
+                    <FrameLayout
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:id="@+id/stepperNode3"
+                        android:background="@drawable/circle" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="0.167" />
+
+                    <FrameLayout
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:id="@+id/stepperNode4"
+                        android:background="@drawable/circle" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="0.167" />
+
+                    <FrameLayout
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:id="@+id/stepperNode5"
+                        android:background="@drawable/circle" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="0.167" />
+
+                    <FrameLayout
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:id="@+id/stepperNode6"
+                        android:background="@drawable/circle" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="0.166" />
+
+                    <FrameLayout
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:id="@+id/stepperNode7"
+                        android:background="@drawable/circle" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/goNextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="48dp"
+        android:layout_marginRight="16dp"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_add_black_24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/goPreviousButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="56dp"
+        android:layout_marginRight="80dp"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+</FrameLayout>

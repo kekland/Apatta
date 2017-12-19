@@ -2,23 +2,45 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="8dp"
-    android:layout_marginLeft="8dp"
-    android:layout_marginRight="8dp"
-    app:contentPadding="8dp">
+    android:layout_margin="8dp"
+    app:contentPadding="12dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Car1"
-            android:id="@+id/carNameText"
-            android:textSize="18sp"
-            android:textColor="#000000"/>
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Car1"
+                android:id="@+id/carNameText"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#000000"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+            <FrameLayout
+                android:id="@+id/carLayoutEditName"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="12dp"
+                android:background="?attr/selectableItemBackgroundBorderless">
+                <View
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/ic_edit_black_24dp" />
+            </FrameLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
