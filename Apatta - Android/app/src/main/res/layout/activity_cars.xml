@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.kekland.apatta.MainActivity">
+    tools:context="com.kekland.apatta.CarsActivity">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
@@ -19,28 +18,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|left"
-                android:text="Welcome"
+                android:text="Cars"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse" />
         </FrameLayout>
     </android.support.v7.widget.Toolbar>
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/carsRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        />
+
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/welcomeFloatingActionButton"
-        android:layout_width="@dimen/ms_step_tab_height"
-        android:layout_height="@dimen/ms_step_tab_height"
-        android:layout_gravity="center_horizontal|bottom"
-        android:layout_marginLeft="8dp"
-        android:layout_marginBottom="192dp"
+        android:id="@+id/carsFloatingActionButtonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="8dp"
         android:clickable="true"
         app:fabSize="normal"
         app:srcCompat="@drawable/ic_add_black_24dp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Нажмите + для начала работы"
-        android:textSize="24sp"
-        android:layout_gravity="center"
-        />
 </FrameLayout>
